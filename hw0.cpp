@@ -7,9 +7,9 @@ void put(double *p_array, int inx, double value, int &n, int size){
         cout<<"Out of bound!"<<endl;
         return;
     }
-        for (int i = n; i > inx; i--){
+    for (int i = n; i > inx; i--){
             p_array[i]= p_array[i-1];
-        }
+    }
     p_array[inx] = value;
     n++;
 }
